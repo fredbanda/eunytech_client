@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://eunnytech-api.onrender.com',
+    baseUrl: 'https://eunnytech.vercel.app/',
     credentials: 'same-origin',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
